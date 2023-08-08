@@ -58,36 +58,30 @@ const ListingSchema = new Schema({
     tagsAnalysis: {
         type: Array,
         required: false
-    }
-  },
-  erank: {
-    converted: {
-        type: Boolean,
-        required: true,
     },
-    dailyViews: {
-        type: Number,
-        required: true,
+    converted: {
+      type: Number,
+      required: false,
     },
     hearts: {
         type: Number,
-        required: true,
+        required: false,
     },
     listingAge: {
         type: String,
-        required: true,
+        required: false,
     },
     name: {
       type: String,
-      required: true,
+      required: false,
     },
     tags: {
       type: Array,
-      required: true,
+      required: false,
     },
     totalViews: {
       type: String,
-      required: true,
+      required: false,
     }
   },
   title: {

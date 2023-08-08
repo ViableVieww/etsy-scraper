@@ -10,6 +10,7 @@ const ShopSchema = new Schema({
   shopID: {
     type: Number,
     required: true,
+    unique: true
   },
   url: {
     type: String,
@@ -42,6 +43,7 @@ const ShopSchema = new Schema({
   everbeeShopID: {
     type: String,
     required: true,
+    unique: true
   },
   averageReview: {
     type: Number,

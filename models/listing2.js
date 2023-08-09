@@ -2,329 +2,327 @@ const Schema = mongoose.Schema;
 const ListingSchema = new Schema({
   listingID: {
     type: Number,
-    required: true,
+    required: true
   },
   listingType: {
     type: String,
-    required: true,
+    required: true
   },
   url: {
     type: String,
-    required: true,
+    required: true
   },
   userID: {
     type: Number,
-    required: true,
+    required: true
   },
   ID: {
     type: Number,
-    required: true,
+    required: true
   },
   state: {
     type: String,
-    required: true,
+    required: true
   },
   favorites: {
     type: Number,
-    required: true,
+    required: true
   },
   everbee: {
     viewCount: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     conversionRate: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     visibilityScore: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     tagsAnalysis: {
-        type: Array,
-        required: false
+      type: Array,
+      required: false
     }
   },
   title: {
     type: String,
-    required: true,
+    required: true
   },
   titleCharCount: {
     type: Number,
-    required: true,
+    required: true
   },
   isCustomizeable: {
     type: Boolean,
-    required: true,
+    required: true
   },
   tags: {
     type: Array,
-    required: true,
+    required: true
   },
   tagsUsed: {
     type: Number,
-    required: true,
+    required: true
   },
   state: {
     type: String,
-    required: true,
+    required: true
   },
   price: {
     type: String,
-    required: true,
+    required: true
   },
   quantity: {
     type: Number,
-    required: true,
+    required: true
   },
   currency: {
     type: String,
-    required: true,
+    required: true
   },
   estMonthlyRevenue: {
     type: Number,
-    required: true,
+    required: true
   },
   estMonthlySales: {
     type: Number,
-    required: true,
+    required: true
   },
   estTotalSales: {
     type: Number,
-    required: true,
+    required: true
   },
   language: {
     type: String,
-    required: true,
+    required: true
   },
   shop: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Shop',
+    ref: 'Shop'
   },
-
-
 
   approach: {
     type: String,
-    required: true,
+    required: true
   },
   cachedConversionRate: {
     type: String,
-    required: true,
+    required: true
   },
   cachedDataUpdatedAt: {
     type: String,
-    required: true,
+    required: true
   },
   cachedDescriptionCharCount: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedEstMonthlyRevenue: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedEstMonthlySales: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedEstReviews: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedEstMonthlyReviews: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedEstTotalSales: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedListingAgeInMonths: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedTagsUsed: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedTitleCharCount: {
     type: Number,
-    required: true,
+    required: true
   },
   cachedVisibilityScore: {
     type: Number,
-    required: true,
+    required: true
   },
   categoryID: {
     type: Number,
-    required: false,
+    required: false
   },
   createdAt: {
     type: String,
-    required: true,
+    required: true
   },
   createdAtTsz: {
     type: Number,
-    required: true,
+    required: true
   },
   currencySymbol: {
     type: String,
-    required: true,
+    required: true
   },
   endingTsz: {
     type: Number,
-    required: true,
+    required: true
   },
   estMonthlyRevenue: {
     type: Number,
-    required: true,
+    required: true
   },
   estMonthlySales: {
     type: Number,
-    required: true,
+    required: true
   },
   estReviews: {
     type: Number,
-    required: true,
+    required: true
   },
   estMonthlyReviews: {
     type: Number,
-    required: true,
+    required: true
   },
   estTotalSales: {
     type: Number,
-    required: true,
+    required: true
   },
   featuredRank: {
     type: String,
-    required: true,
+    required: true
   },
   hasVariations: {
     type: Boolean,
-    required: true,
+    required: true
   },
   isFav: {
     type: Boolean,
-    required: true,
+    required: true
   },
   isPersonalizable: {
     type: Boolean,
-    required: true,
+    required: true
   },
   isSupply: {
     type: Boolean,
-    required: true,
+    required: true
   },
   lastModifiedListingDate: {
     type: String,
-    required: true,
+    required: true
   },
   lastModifiedTimestamp: {
     type: Number,
-    required: true,
+    required: true
   },
   lastModifiedTsz: {
     type: Number,
-    required: true,
+    required: true
   },
   listingAgeInMonths: {
     type: Number,
-    required: true,
+    required: true
   },
   reviewAverage: {
     type: Number,
-    required: false,
+    required: false
   },
   reviewRequired: {
     type: Boolean,
-    required: true,
+    required: true
   },
   shippingTemplateID: {
     type: Number,
-    required: false,
+    required: false
   },
   shopID: {
     type: Number,
-    required: true,
+    required: true
   },
   shopSectionID: {
     type: Number,
-    required: true,
+    required: true
   },
   shouldAutoRenew: {
     type: Boolean,
-    required: true,
+    required: true
   },
   SKU: {
     type: String,
-    required: true,
+    required: true
   },
   snoozeTill: {
     type: String,
-    required: false,
+    required: false
   },
   snoozed: {
     type: String,
-    required: false,
+    required: false
   },
   stateTsz: {
     type: Number,
-    required: false,
+    required: false
   },
   mainCategory: {
     type: String,
-    required: false,
+    required: false
   },
   subCategory: {
     type: String,
-    required: false,
+    required: false
   },
   materials: {
     type: String,
-    required: true,
+    required: true
   },
   originalCreationTsz: {
     type: Number,
-    required: true,
+    required: true
   },
   processingMin: {
     type: Number,
-    required: false,
+    required: false
   },
   taxonomyID: {
     type: Number,
-    required: true,
+    required: true
   },
   taxonomyPath: {
     type: Array,
-    required: true,
+    required: true
   },
   trademarkRescan: {
     type: String,
-    required: false,
+    required: false
   },
   trademarkScanned: {
     type: String,
-    required: false,
+    required: false
   },
   updtatedAt: {
     type: String,
-    required: true,
+    required: true
   },
   whenMade: {
     type: String,
-    required: true,
+    required: true
   },
   whoMade: {
     type: String,
-    required: true,
+    required: true
   },
   Images: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 });
 
 module.exports = mongoose.model('Book', ListingSchema);

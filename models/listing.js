@@ -4,110 +4,108 @@ const Schema = mongoose.Schema;
 const ListingSchema = new Schema({
   listingID: {
     type: Number,
-    required: true,
+    required: true
   },
   url: {
     type: String,
-    required: true,
+    required: true
   },
   state: {
     type: String,
-    required: true,
+    required: true
   },
   image: {
     type: String,
-    required: true,
+    required: true
   },
   everbee: {
     favorites: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     viewCount: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     tagsUsed: {
-        type: String,
-        required: false,
+      type: String,
+      required: false
     },
     conversionRate: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     visibilityScore: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     totalSales: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     monthlyRev: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     monthlySales: {
-        type: Number,
-        required: true,
+      type: Number,
+      required: true
     },
     monthlyReviews: {
-        type: Number,
-        required: false,
+      type: Number,
+      required: false
     },
     tagsAnalysis: {
-        type: Array,
-        required: false
+      type: Array,
+      required: false
     },
     converted: {
       type: Number,
-      required: false,
+      required: false
     },
     hearts: {
-        type: Number,
-        required: false,
+      type: Number,
+      required: false
     },
     listingAge: {
-        type: String,
-        required: false,
+      type: String,
+      required: false
     },
     name: {
       type: String,
-      required: false,
+      required: false
     },
     tags: {
       type: Array,
-      required: false,
+      required: false
     },
     totalViews: {
       type: String,
-      required: false,
+      required: false
     }
   },
   title: {
     type: String,
-    required: false,
+    required: false
   },
   tags: {
     type: Array,
-    required: false,
+    required: false
   },
   state: {
     type: String,
-    required: false,
+    required: false
   },
   price: {
     type: String,
-    required: false,
+    required: false
   },
   shop: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Shop',
-  },
+    ref: 'Shop'
+  }
 });
 
 export default mongoose.model('Listing', ListingSchema);
-
-
 
 // "listing_type": "download", //

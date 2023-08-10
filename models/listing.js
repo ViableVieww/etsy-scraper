@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 const ListingSchema = new Schema({
-  term: {
+  keyword: {
     type: String,
     required: true
   },

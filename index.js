@@ -4,7 +4,7 @@ import path from 'path';
 import { uniqueCount } from './lib/utils.js';
 import { scanKeyTerms, getTwitterCount } from './lib/scraper.js';
 import { connectDB } from './lib/db.js';
-import './lib/cron.js';
+// import './lib/cron.js';
 import aggregate from './lib/aggregate.js';
 import 'dotenv/config';
 

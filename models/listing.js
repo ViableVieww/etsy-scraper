@@ -2,6 +2,10 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 const ListingSchema = new Schema({
+  term: {
+    type: String,
+    required: true
+  },
   listingID: {
     type: Number,
     required: true

@@ -4,7 +4,6 @@
 
 - Node.js (version)
 - npm (version)
-- MongoDB (version)
 
 ## Installation
 
@@ -22,6 +21,8 @@ Steps:
 1. Create a new file `.env` on your local
 2. Copy the contents of `.env.example -> .env`
 
-- `MONGO_URI`: MongoDB connection URI
 - `NODE_ENV`: Development or Production
 - `PORT`: Application port
+- `BUCKET`:
+- `ACCESS_KEY`:
+- `SECRET_ACCESS_KEY`:
